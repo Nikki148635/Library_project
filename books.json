@@ -1,0 +1,27 @@
+[
+    {
+        "Book_id": 1,
+        "title": "Adventures of Tom Sawyer",
+        "Author": "Mark Twain"
+    },
+    {
+        "Book_id": 2,
+        "title": "Geetanjali",
+        "Author": "Rabindra Nath Tagore"
+    },
+    {
+        "Book_id": 3,
+        "title": "Utopia",
+        "Author": "Sir Thomas Moor"
+    },
+    {
+        "Book_id": 4,
+        "title": "Origin of Species",
+        "Author": "Charles Darwin"
+    },
+    {
+        "Book_id": 5,
+        "title": "Das Kapital",
+        "Author": "Karl Marx"
+    }
+] 
