@@ -4,13 +4,13 @@ import json
 
 app = Flask(__name__)
 
-# def handle_error(message, status_code=400): 
-#     return jsonify({"error": message}), status_code
+def handle_error(message, status_code=400): 
+    return jsonify({"error": message}), status_code
 
 def fetch_data():
     
     try:
-        connection_string = "mongodb://172.17.0.2:27017/niha_mongodb"
+        connection_string = "mongodb://localhost:27017/niha_mongodb"
         client = MongoClient(connection_string)
         db = client.get_database("niha_mongodb")
     except MongoClient.Error as err:
@@ -19,6 +19,7 @@ def fetch_data():
     try:
         collection = db.get_collection("items")
         data = collection.find()
+        print(data)
         book_data = []
         for document in data: 
             print (document)
